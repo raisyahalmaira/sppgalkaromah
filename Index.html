@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absen</title>
+</head>
+
+<body>
+    <!-- ganti src url dengan url form anda -->
+    <iframe id="gform"
+    src="https://docs.google.com/forms/d/e/1FAIpQLScDQCFYjHP3DB40XA0yz5BKBZhYyJmK0WZ2yfsgpk4UwqGTCw/viewform"
+    width="100%"
+    height="2000"
+    style="border:none;">
+</iframe>
+
+    <script type="text/javascript">
+        var load = 0;
+        // sesuaikan id gform dengan id yang ada pada tag iframe di atas
+        document.getElementById('gform').onload = function () {
+            load++;
+            if (load > 1) {
+                // ganti url dibawah dengan url webapp anda
+                document.location = "https://www.google.com/url?q=https://script.google.com/macros/s/AKfycbyUnGG9lMvbN5rbKwr2iX4iNtMJvBMN_5fpPwWoPJK-l7A7Z08thWaUIaL5F0CJ0utH/exec&sa=D&source=editors&ust=1774793513008242&usg=AOvVaw32kj3x3xirN4HMI4Lr6mgb";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
